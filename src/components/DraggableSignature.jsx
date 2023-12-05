@@ -24,7 +24,7 @@ export default function DraggableSignature({ url, onEnd, onSet, onCancel }) {
         }
     }
     return (
-        <Draggable onStop={onEnd}>
+        <Draggable bounds="body" onStop={onEnd}>
             <div style={styles.container}>
                 <div style={styles.controls}>
                     <div style={styles.smallButton} onClick={onSet}><FaCheck color={goodColor} /></div>
